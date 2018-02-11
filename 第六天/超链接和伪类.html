@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>超链接和伪类</title>
+</head>
+<body>
+<a href="javascript:;">珠峰培训</a>
+<!--
+a是一个超链接 链接到那里由href里面的路径来决定
+浏览器默认的文字大小是多少？
+16px
+-->
+<style type="text/css">
+    a:link{
+        /*默认效果*/
+        /*默认的颜色是蓝色*/
+        color: #1b66c7;
+        /*支持所有浏览器*/
+    }
+
+    a:hover{
+        /*鼠标经过的状态*/
+        /*绿色*/
+        color: #30bd72;
+        /*ie6以上--除了a元素（a元素是全部兼容）*/
+    }
+    a:visited{
+        /*鼠标点击后离开的状态*/
+        /*紫色*/
+        /*兼容问题 ie兼容 其他浏览器不一定兼容*/
+        color: #b80f8e;
+    }
+    a:active{
+        /*鼠标点击的状态*/
+        /*文字颜色是红色的*/
+        color: red;
+        /*ie6以上兼容（a元素全部兼容）*/
+    }
+    li:after{
+        /*li元素之后，在li里面*/
+    }
+    li:before{
+        /*li元素之前，在li里面*/
+        content: "";
+        /*和after before 配合使用 否则效果不会实现*/
+    }
+/*用伪类的方式 创建一个html里面不存在的元素 并且可以实现效果*/
+</style>
+</body>
+</html>

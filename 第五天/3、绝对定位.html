@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>绝对定位</title>
+    <style type="text/css">
+        body,div{
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            position: relative;
+            /*相对定位 提示浏览器我是下面绝对定位那个盒子的参照物*/
+            margin: 100px 0 0 100px;
+            /*top right bottom left*/
+            width: 500px;
+            height: 500px;
+            background: #afbecf;
+        }
+        .box1{
+            position: absolute;
+            top: 100px;
+            left: 50px;
+            width: 300px;
+            height: 200px;
+            background: #2fbc71;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <span class="box1"></span>
+    <div class="box2"></div>
+</div>
+
+绝对定位的特点：
+1、参照物：在没有给他父级盒子相对定位属性的时候，这个盒子的参照物是body
+2、绝对定位的元素脱离了文档流
+3、绝对定位的属性可以使行内元素具有块级元素的属性
+4、如果想指定参照物，需要将相对定位的属性给到你要作为参照物的盒子
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

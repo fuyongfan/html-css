@@ -1,0 +1,32 @@
+body,table,thead,tr,th,td{
+    margin: 0;
+    padding: 0;
+}
+table{
+
+    margin: 0 auto;
+    font-family: Î¢ÈíÑÅºÚ;
+    font-size: 11px;
+    color: #000000;
+    background-color: #006fbb;
+    text-align: center;
+    font-weight:bold;
+}
+tr{
+    background-color:white;
+    height:25px
+}
+table thead tr th{
+    font-size: 25px;
+    height: 50px;
+}
+
+table tr .tdT0{
+    width:70px;
+}
+table tr .tdT{
+    width: 62px;
+}
+table .trT{
+    height: 70px;
+}

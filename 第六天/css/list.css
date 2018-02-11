@@ -1,0 +1,77 @@
+body,ul,li,span,a{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft Yahei", simSun;
+    font-size: 14px;
+}
+body{
+    background: #f8f8f8;
+}
+ul,li{
+    list-style: none;
+    /*清除列表样式*/
+}
+ul{
+    margin: 20px auto;
+    /*让一个盒子水平居中*/
+    border: 1px solid #ccc;
+    width: 200px;
+    height: 310px;
+    background: #ffffff;
+}
+ul li{
+    position: relative;
+    border: 1px solid #ffffff;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: red;
+    /*padding: 1px 0;*/
+}
+ul li a{
+    /*单独写a 代表了四种状态*/
+    text-decoration: none;
+    color: red;
+    font-size: 18px;
+}
+/*
+border的颜色可以继承color
+可以使用display:inline-block来解决行内元素的宽高问题
+vertical-align:middle 可以使具有display:inline-block这个属性的元素垂直居中（此处的垂直居中为整个盒子的高度，包括内容、内边距和边框）
+*/
+ul li span{
+    /*display: inline-block;*/
+    /*border-left: 10px solid;*/
+    display: none;
+    /*将元素隐藏，而且不占据空间*/
+    position: absolute;
+    border: 10px solid;
+}
+ul li .btnLeft{
+    top: 20px;
+    left: 20px;
+    border-color: transparent transparent transparent red;
+    /*border-right:10px solid transparent;*/
+    /*border-top:10px solid transparent;*/
+    /*border-bottom:10px solid transparent;*/
+}
+ul li .btnRight{
+    top: 20px;
+    right: 20px;
+    border-color: transparent red transparent transparent;
+}
+ul li:hover{
+    border: 1px solid red;
+    /*padding: 0;*/
+}
+ul li:hover span{
+    /*在鼠标经过li的时候span显示*/
+    display: block;
+    /*显示隐藏的元素*/
+}
+
+
+
+
+
+

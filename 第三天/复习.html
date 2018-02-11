@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>复习</title>
+    <style type="text/css">
+        body,div{
+            /*并集选择器*/
+            /*display: block;*/
+            margin: 0;
+            /*border: ;*/
+            padding: 0;
+            /*width: auto;*/
+            /*height: auto;*/
+        }
+        .box1{
+            /*类选择器*/
+            margin-bottom: 20px;
+            border-top: 10px solid #cccccc;
+            border-bottom: 10px solid #cccccc;
+            border-right: 20px solid #8dae83;
+            border-left: 20px solid #2196f3;
+            width: 201px;
+            height: 300px;
+        }
+        /*
+        height=300+10+10+100+200+30+10
+        */
+       /* .box1 div{
+            /!*后代选择器*!/
+            margin-top: 100px;
+            width: 100px;
+            height: 20px;
+            background-color: #2196f3;
+        }*/
+        .box2{
+            /*margin-top: 100px;*/
+            padding: 30px 40px 10px 50px;
+            /*上 右 下 左*/
+            margin: 10px;
+            border: 20px;
+            width: 100px;
+            height: 200px;
+            background-color: rgb(198,200,10);
+        }
+    </style>
+</head>
+<body>
+<!--我说一个盒子的宽度是有内容+内边距+边框
+
+一个盒子如果给了内边距和边框 整体的宽度要减去
+
+外边距不会影响盒子的宽度和高度
+box1的width（内容）是0
+box1盒子内容的宽度是0 高度是100 右侧的内边距是40 边框分别是30 20 30 40
+box2盒子的宽度是100 右侧的内边距是20 左侧的外边距是30 高度是20px
+假设这两个盒子是在同一水平线上
+第一问 两个盒子中间的距离是多少
+第二问 box1 距离box2 最右侧的距离是多少-->
+
+<div class="box1">
+    <div></div>
+</div>
+<div class="box2"></div>
+<!--
+两个盒子上下结构的时候 会发生margin值塌陷（大的值会将小的值吸收 最后保留大值）
+父级盒子和子级盒子之间 发生margin-top值传递的时候 是子级盒子的上方什么元素都没有，并且父级盒子只有width和height
+
+-->
+两个盒子上下结构
+
+box1
+width 201px
+height 300px
+border 10px  20px
+margin-bottom 20px
+
+box2
+width 100px
+height 200px
+padding  30px 40px 10px 50px
+margin-top 100px
+
+问两个盒子之间的距离
+问第一个盒子的最上面距离第二个盒子最下面的距离
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

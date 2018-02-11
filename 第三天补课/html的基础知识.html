@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>html零基础课程</title>
+</head>
+<p>
+一个静态页面是由什么组成的？
+html 包含了 文本 音频 视频 图片
+css 给html添加样式
+js 让你的静态页面动起来
+
+html 版本4
+css 版本2
+
+html 超文本标记语言
+超文本 文字 音频 视频 图片
+标记  用标签来进行（超文本）标记
+
+了解一下html的组成 （具体是由什么标签组成的）
+
+<!DOCTYPE html>
+<!-- 文档声明 告诉浏览器 我是一个html文件
+在html的最上方 -- 浏览器的读取机制 是 从上到下
+<!DOCTYPE html> --html5的声明
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">--html4的文档声明
+-->
+<html>
+<!--
+创建html文档 --- 我里面的内容是html的内容
+-->
+<head lang="en">
+    <!--
+        文档的头部 head里面的内容不会再页面上直接显示--特点
+    -->
+    <meta charset="UTF-8">
+    <!--
+    utf-8 文档编码  国际通用的编码格式
+    gb2312
+    GBK  国内的编码
+    -->
+    <title>html零基础课程</title>
+    <!-- 会显示在浏览器的页卡位置 -->
+</head>
+<body>
+<!--是html的主体内容 这部分的代码 会在页面上直接显示-->
+</body>
+</html>
+
+标签 它是由 <p></p>尖括号和英文单词或者字母组成的 或是单个的 或是成对的
+标签分类
+闭合标签 <p>开始标签</p>结束标签
+开放式标签 <img src="图片路径" alt="描述图片语言" />
+
+标签里面的 = 左右的内容 是标签的属性 属性就有属性名称和属性值
+一般 title  alt class id
+<img src="图片路径" alt="描述图片语言" width="100" height="100" title="title" />
+img标签一定要写alt
+<a href="超链接" title="描述性的语言">a标签中一定要写title</a>
+<!--面试题-->
+title 当鼠标放置在某个元素上的时候 出现一个文本框 文本框中的内容是我们要展示给用户的内容
+利于seo优化（搜索引擎的抓取）
+alt 一般应用于图片，在你的网速出现问题或者你的http请求回应出现问题时，图片发生图裂或者加载不出来的时候 alt内的内容会出现在图片的位置
+
+常用的标签有哪些？<br/>
+div h1-h6(重点) span a img p ul ol dl
+在你写静态页面的时候 list 形式 就用ul和ol 常用的是ul
+dl 定义列表 写左右结构的时候 会使用dl dt dd 不用在大结构的搭建
+<dl>
+    <dt></dt>
+    <dd></dd>
+</dl>
+
+元素的分类
+标签也是元素
+元素分为 行内元素和块级元素
+常用行内元素有   span a b strong i em input img font br
+常用块级元素有 div p h1-h6 ul ol dl li dd dt table
+
+
+
+
+
+
+
+
+
+</body>
+</html>

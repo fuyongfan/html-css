@@ -1,0 +1,91 @@
+body,div,ul,ol,li,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,a,span,img,input,table,tr,th,td,b,i,em,strong,font{
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif , "宋体";
+    font-size: 12px;
+}
+img,input{
+    border: none;
+    vertical-align: middle;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clear{
+    clear: both;
+    height: 0;
+    line-height: 0;
+}
+.w1000{
+    margin: 0 auto;
+    width: 1000px;
+}
+.w1200{
+    margin: 0 auto;
+    width: 1200px;
+}
+/*全局样式 end*/
+.header{
+    width: 100%;
+    min-width: 1000px;
+    height: 58px;
+    background: #191d3a;
+}
+.header h1{
+    float: left;
+    padding: 10px 48px 0 20px;
+}
+.header .nav{
+    float: left;
+}
+.header .nav li{
+    float: left;
+    border-right: 1px solid #252947;
+    line-height: 58px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+.header .nav li a{
+    font-size: 14px;
+    color: #818496;
+}
+.header .nav li:hover a{
+    color: #e2e4ed;
+}
+.header .nav li.on{
+    background: #252947;
+}
+.header .nav li.on a{
+    color: #e2e4ed;
+}
+.header .join{
+    float: right;
+    border: 1px solid #3aca7a;
+    margin: 12px 20px 0 0;
+    width: 98px;
+    height: 32px;
+    background: #38b774;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 34px;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*header end*/

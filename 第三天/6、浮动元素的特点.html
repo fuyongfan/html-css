@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>浮动元素的特点</title>
+    <style type="text/css">
+        body,ul,li {
+            margin: 0;
+            padding: 0;
+        }
+        ul,ol,li{
+            list-style: none;
+        }
+        ul{
+            background-color: palevioletred;
+        }
+        ul span{
+            display: block;
+            /*overflow: hidden;*/
+            /*将行内元素转化为块级元素 这个属性永远在最上面*/
+            float: left;
+            /*position: absolute;*/
+            margin: 1px 5px;
+            border: 1px solid #cccccc;
+            padding: 10px 20px;
+            width: auto;
+            height: auto;
+            background-color: #fff;
+            font-size: 16px;
+            /*css的书写习惯*/
+        }
+        .clear{
+            clear: both;
+            height: 0;
+            line-height: 0;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <span>返回</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>...162</span><span>下一页</span>
+</ul>
+<!--
+浮动元素的特点：
+1、脱离标准的文档流
+2、浮动的元素(块级元素和行内元素)宽高度会回归本身盒子的宽高（内容+内边距+边框）换句话说，浮动让行内元素具有了块级元素的属性
+3、浮动后面的盒子会占据浮动盒子的位置（脱离了文档流）
+
+有浮动就要清除浮动，无论你是否给父级盒子宽高，清除浮动的位置是在最后一个浮动元素的下面
+
+-->
+</body>
+</html>

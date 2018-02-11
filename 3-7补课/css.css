@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: "Microsoft Yahei", simSun;
+}
+.list{
+    margin: 0 auto;
+    width: 1000px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.list dl{
+    float: left;
+    position: relative;
+    /*给伪类一个参照物*/
+}
+.list dl dt{
+    float: left;
+    width: 70px;
+}
+.list dl dd{
+    float: left;
+    width: 110px;
+
+}
+.list dl .list1{
+    width: 250px;
+}
+.list dl dd a{
+    float: left;
+    width: 80px;
+    line-height: 30px;
+}
+.list dl:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+    /*这个是必须有的*/
+    width: 1px;
+    height: 180px;
+    background: #cccccc;
+}
+
+
+
+
+
+
+
+
+
+

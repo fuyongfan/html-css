@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>浮动</title>
+    <style type="text/css">
+        body,div,p{
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            /*overflow: hidden;*/
+            /*本意是溢出隐藏 在这里也可以解决浮动问题*/
+            background-color: #216ed0;
+        }
+        p{
+            /*float: left;*/
+            /*让元素浮动 左浮动*/
+            border: 2px solid #ffffff;
+            width: 200px;
+            height: 200px;
+            background-color: #ffb243;
+            font-size: 20px;
+            line-height: 200px;
+            color: #ffffff;
+        }
+        .son1{
+            float: left;
+            background-color: #30bd72;
+        }
+        .son2{
+            float: right;
+            background-color: #cccccc;
+        }
+        .son3{
+            float: left;
+            background-color: #afbecf;
+        }
+        .clear{
+            clear: both;
+            height: 0;
+            line-height: 0;
+            /*
+            height line-height 的意义在于ie6浏览器 ie6对于块级元素有时会默认他的高度是1px line-height是1px
+            */
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <p class="son1">第一个盒子</p>
+    <p class="son2">第二个盒子</p>
+    <p class="son3">第三个盒子</p>
+    <div class="clear"></div>
+    <div style="width: 100px;height: 100px;background-color: #30bd72;">我是p的兄弟元素</div>
+</div>
+
+<!--
+左浮动是从第一个盒子开始 从左到右依次排布
+右浮动是从第一个盒子开始 从右到左依次排布
+-->
+<!--
+第二个盒子浮动后 第三个盒子的位置发生了变化 第三个盒子的位置到第二个盒子的下面
+文档流：遵从元素的属性，不做任何改变来进行排布
+第一种布局是流动布局 是遵循文档流的布局
+第二种布局是浮动布局 是脱离文档流的布局
+脱离文档流的元素 不占据原位置（原来的空间） 后面的元素会向上找，查询的结构是上一个元素不存在，那么后面的元素会占据前面元素的位置
+
+当父级元素不设置宽高的时候，子级元素浮动后，脱离了文档流，父级元素的宽度和高度消失，因为父级元素是块级元素，宽度是充满父级元素，高度是由内容的高度决定的，子级元素脱离了文档流，也就是说子级不是这个父级的子元素，所以父级元素就不显示
+
+怎么解决这个问题？
+1、给父级元素设置宽度和高度
+2、overflow: hidden;属性来解决
+3、clear: both;清除浮动的css属性
+
+clear 的位置
+1、紧跟着最后一个浮动元素的位置（最好的位置）----可以保证本单元的元素正常显示，也可以保证后面的元素正常显示；
+2、如果clear放置在浮动元素父级元素和父级的兄弟元素中间，下面的元素不受影响，但是也影响（完全不参与上面元素的样式，只保证下面元素的正常显示）不到浮动元素的父级；
+3、放置在浮动父级元素的兄弟元素中。
+
+clear
+1、both 清除全部（左+右）
+2、left 清除左浮动
+3、right 清除右浮动
+-->
+</body>
+</html>

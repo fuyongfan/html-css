@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 920px;
+            background: #44cdd9;
+            overflow: hidden;
+        }
+        .son{
+            position: relative;
+            float: left;
+            width: 300px;
+            height: 200px;
+            /*margin-right: 10px;*/
+            background: #f1f1f1;
+        }
+        .son:after{
+            /*position: absolute;*/
+            /*top: 0;*/
+            /*right: 0;*/
+            float: left;
+            display: block;
+            width: 10px;
+            height: 200px;
+            content: '';
+            background: red;
+
+        }
+        /*after这个伪类的使用 不占据空间 第一是因为他本身就是一个伪元素 第二定位使他脱离文档流 只能脱离文档流使用 就是一个伪的行内元素 浮动情况下一直会在冒号前的这个标签之内进行浮动*/
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="son"></div>
+        <div class="son"></div>
+        <div class="son"></div>
+    </div>
+</body>
+</html>

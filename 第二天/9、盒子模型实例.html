@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>盒子模型实例</title>
+    <style type="text/css">
+        body,div{margin: 0;padding: 0;}
+        .parent{
+            /*
+            width:660 600+20+40
+            height:740 700+10+30
+            */
+            padding: 10px 20px 30px 40px;
+            /* 上 右 下 左 */
+            /*
+            margin: 10px 20px 30px;
+            /!*上 左右 下*!/
+            margin: 10px 30px;
+            /!*上下 左右 *!/
+            */
+            width: 600px;
+            height: 700px;
+            background-color: #2196f3;
+        }
+        .box{
+            /*
+            width:230 200+30
+            height:100
+            */
+            margin-left: 20px;
+            padding-left: 30px;
+            width: 200px;
+            height: 100px;
+            background-color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <div class="box">
+
+    </div>
+</div>
+box盒子分别有左侧内边距是30px，右侧内边距是0px，左侧外边距是20px
+内容的宽度和高度分别是200px和100px
+box盒子外的parent盒子宽度是600px 高度是700px，parent盒子的内边距分别是10px 20px 30px 40px
+问parent盒子距离box盒子的距离？
+上10  右370 下630 左60
+</body>
+</html>

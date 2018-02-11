@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>解决单元格之间边框加倍的问题</title>
+    <style type="text/css">
+        body,table,tr,td{
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+        table{
+            width: 1000px;
+            height: 400px;
+            background: #cccccc;
+        }
+        td{
+            /*border: 1px solid #cccccc;*/
+            text-align: center;
+            background: #ffffff;
+        }
+        /*
+        table 自带border属性
+        img
+        input
+        */
+    </style>
+</head>
+<body>
+    <table cellspacing="1" cellpadding="0">
+        <tr>
+            <td>单元格1</td>
+            <td>单元格2</td>
+            <td>单元格3</td>
+            <td>单元格4</td>
+            <td>单元格5</td>
+        </tr>
+        <tr>
+            <td>单元格1</td>
+            <td>单元格2</td>
+            <td>单元格3</td>
+            <td>单元格4</td>
+            <td>单元格5</td>
+        </tr>
+        <tr>
+            <td>单元格1</td>
+            <td>单元格2</td>
+            <td>单元格3</td>
+            <td>单元格4</td>
+            <td>单元格5</td>
+        </tr>
+        <tr>
+            <td>单元格1</td>
+            <td>单元格2</td>
+            <td>单元格3</td>
+            <td>单元格4</td>
+            <td>单元格5</td>
+        </tr>
+    </table>
+</body>
+</html>

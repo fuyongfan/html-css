@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<p>
+标签选择器：通过标签的名称，来选择标签
+基本语法是：表签名{}
+
+类选择器：通过标签的class类名，来选择标签
+基本语法是：标签中有类名<h1 class="title"></h1>
+类名的选择是.class{}
+
+id选择器：独一无二，一个id名在一个页面上只能出现一次
+基本语法是：标签中有id名<h1 id="id">我是一个大标题</h1>
+id选择器是#id{}
+<h1 class="title" id="one">我是一个大标题</h1>
+<style type="text/css">
+    /*h1{
+        width: 200px;
+        height: 50px;
+    }*/
+    .title{
+        /*类名的选择*/
+        width: 200px;
+        height: 50px;
+        background-color: red;
+    }
+    #one{
+        background-color: black;
+    }
+</style>
+
+选择器的优先级（权重）
+选择器     权重
+继承样式    0.1
+标签选择器  1
+类选择器    10
+ID选择器    100
+以上三种标签、类、id选择器是css的基本选择器
+
+特殊选择器：
+并集选择器：几个具有相同css属性的元素，以逗号分隔开写在一起
+例如：h1,p,li{color:red;}注意 此处的标点符号都是英文半角
+
+交集选择器：有相同需求并且满足一个元素内（既要有这个元素并且这个元素要有这个class的名称） 一般作用于权重的比较(增加此元素的权重值 利于浏览器的查找)
+<!--#ID .class div p--> .class1 span.on{}
+span+.on=1+10=11>10>1
+span+#on=1+100=101
+例如：h1.class{}
+<h1 class="class"></h1>
+<a href="javascript:;">伪类选择器</a>
+<span class="on"></span>
+<span></span>
+
+后代选择器：子级和父级的关系
+选择器的名称之间 用空格来区分
+ie6不兼容
+div p span{}
+<!--<style type="text/css">
+    div p span{
+        /*行内元素转化为块级元素*/
+        display: block;
+        width: 400px;
+        height: 70px;
+        background-color: pink;
+    }
+</style>-->
+<div>爷爷
+    <p>父亲
+        <span>孙子</span>
+    </p>
+</div>
+
+子级选择器：使用大于号进行选择 父亲>儿子（父级的第一代子级，选择所有的子级）
+<style type="text/css">
+    .div1>p{
+        width: 200px;
+        height: 40px;
+        background-color: #1b66c7;
+    }
+</style>
+<div class="div1">
+    <p>
+        <span></span>
+    </p>
+    <p>
+
+    </p>
+    <p>
+
+    </p>
+</div>
+通配符（通用选择器）选择全部标签和超文本内容-->不建议使用 因为兼容性不是十分良好
+*{}
+<style type="text/css">
+    /**{*/
+        /*display: none;*/
+        /*/!*隐藏 不占据任何空间*!/*/
+    /*}*/
+    /*div,h1,p,span{
+        /!*并集选择器*!/
+        display: none;
+    }*/
+</style>
+伪类选择器：a:hover{}
+hover是一个状态 鼠标经过元素的状态
+hover在ie6浏览器中是不支持的
+<a href="javascript:;">伪类选择器</a>
+<style type="text/css">
+    a{
+        color: #000000;
+        font-size: 30px;/*字体大小*/
+    }
+    a:hover{
+        color: red;
+        font-size: 40px;
+        text-decoration: none;
+        /*将下划线去掉*/
+    }
+    /*
+        a的默认状态是带有下划线的
+    */
+
+</style>
+
+
+
+<div class="div1">
+    <div class="div2">
+        <div class="div3">
+            我是div3
+        </div>
+        <div class="div3 div4">
+            我是div3
+        </div>
+    </div>
+</div>
+<style type="text/css">
+    .div1 .div2 .div3{
+        width: 200px;
+        height: 200px;
+        background-color: #f06373;
+        font-size: 30px;
+        font-family: '微软雅黑';
+        /*字体类型*/
+        text-align: right;
+        /*left center right*/
+        line-height: 200px;
+    }
+    /*#div3{
+        color: #ffffff;
+    }*/
+    .div1 .div2 .div4{
+        color: #ffffff;
+    }
+</style>
+
+
+一个元素的class类名可以有多个 书写样式为<p class="class1 class2"></p>在class="1 2"里 以空格进行区分
+
+类名可以在一个页面上出现多次
+
+
+<div class="div1 div4">
+    <p></p>
+</div>
+<div class="div1 div5">
+    <p></p>
+</div>
+<div class="div1"></div>
+
+<style>
+    /*body>div{*/
+        /*width: 1000px;*/
+    /*}*/
+    /*.div1,.div2,.div3{*/
+        /*width: 1000px;*/
+    /*}*/
+    .div1{
+        width: 1000px;
+    }
+    .div4 p{
+
+    }
+    .div5 p{
+
+    }
+</style>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+body,table,thead,tbody,caption,tr,th,td,a,img{
+    margin: 0;
+    padding: 0;
+}
+img,table,thead,tbody,th,td,tr{
+    border: none;
+    /*vertical-align: middle;*/
+}
+
+table{
+    margin: 0 auto;
+    border: 1px solid #dddddd;
+    width: 800px;
+    height: auto;
+    background: #dddddd;
+}
+caption{
+    line-height: 50px;
+    font-weight: 900;
+}
+td,th{
+    height: 50px;
+    text-align: center;
+    /*border: 1px solid #dddddd;*/
+}
+th{
+    background: #f1f1f1;
+}
+td{
+    background: #ffffff;
+}
+a{
+
+    color: #8686ff;
+}
+
+
+
+
+

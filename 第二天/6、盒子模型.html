@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>盒子模型</title>
+    <style type="text/css">
+        body,div,img{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            border: none;
+        }
+        /*清空默认样式*/
+        .box{
+            width: 750px;
+            height: 290px;
+            background-color: rgb(200,200,200);
+            /*margin: 10px;*/
+            margin-left: 30px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            margin-right: 50px;
+            padding: 60px;
+            border: 10px solid #8dae83;
+        }
+    </style>
+</head>
+<body>
+<div style="width: 100px;height: 20px;background-color: #cccccc;margin-bottom: 20px;"></div>
+<div style="width: 100px;height: 100px;background-color: #2196f3;margin-top: 50px"></div>
+<!--
+盒子模型：是由内容+内边距+边框+外边距组成的
+margin值的兼容问题
+一个盒子中 如果里面的盒子有上边距 而里面的盒子上方不存在任何元素的时候，那么这个上边距就转移到父级盒子
+当两个块级元素分别设置了margin-bottom和margin-top的时候 他们之间的距离是margin值大的那个---margin值塌陷
+
+
+能用padding解决的问题 坚决不用margin
+-->
+<!--
+    盒子的外边距是不影响盒子本身的宽高 而内边距和边框会影响盒子的宽高
+-->
+<!--
+overflow: hidden;
+原意是溢出隐藏
+-->
+<div style="width: 1000px;height: 500px;background-color: #1b66c7;overflow: hidden;">
+    <div class="box">
+        <img src="pic12.jpg" alt=""/>
+        <!-- content -->
+    </div>
+</div>
+
+box这个盒子占据浏览器的空间是多大？
+宽度=750+60*2+30+10*2+50=970
+高度=290+60*2+40+10*2+20=490
+box这个盒子本身的宽高是多少？
+内容+内边距+边框
+
+
+</body>
+</html>

@@ -1,0 +1,1001 @@
+body,div,ul,ol,li,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,a,span,img,input,table,tr,th,td,b,i,em,strong,font,form,label,textarea{
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif , "宋体";
+    font-size: 12px;
+    color: #333333;
+}
+body{
+    background: #f5f5f5;
+}
+img,input{
+    border: none;
+    vertical-align: middle;
+}
+input{
+    outline: none;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clear{
+    clear: both;
+    height: 0;
+    line-height: 0;
+}
+.w1100{
+    margin: 0 auto;
+    width: 1100px;
+}
+/*clear end*/
+.header{
+    width: 100%;
+    min-width: 1100px;
+    height: 60px;
+    background: #f87f1c;
+}
+.header h1{
+    float: left;
+    width: 207px;
+    height: 60px;
+}
+.header h1 a{
+    display: block;
+    width: 200px;
+    height: 60px;
+    background: url("../images/default.png") no-repeat;
+}
+.header h1 a:hover{
+    background-position: 0px -60px;
+}
+.header .nav{
+    float: left;
+    width: 200px;
+    height: 60px;
+}
+.header .nav li{
+    float: left;
+    width: 90px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+.header .nav li a{
+    font-size: 16px;
+    color: #ffffff;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+    /*
+    0   阴影的左右偏移量
+    1px 阴影的上下偏移量
+    1px 阴影的扩散范围
+    */
+    /*text-shadow 文字阴影*/
+    /*border-shadow: ;*/
+    /*box-shadow: ;*/
+}
+.header .nav .home{
+    background: linear-gradient(to bottom, #db6600 0, #f57614 100%);
+    /*背景颜色的线性渐变*/
+}
+.navList{
+    float: left;
+    margin-top: 15px;
+    border: 1px solid #db6b16;
+    border-radius: 3px;
+}
+.navList a{
+    display: block;
+    float: left;
+    border-right: 1px solid #db6b16;
+    width: 60px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);
+}
+.navList a:hover{
+    background: linear-gradient(to bottom, #d65c15 0, #e06716 100%);
+}
+.navList .last{
+    border-right: none;
+}
+.header form{
+    display: block;
+    float: left;
+    margin: 15px 0 0 20px;
+    border: 1px solid #db6b16;
+    border-radius: 3px;
+    width: 228px;
+    height: 28px;
+    line-height: 28px;
+    background: #ffffff;
+    /*
+    background是一个符合属性
+    */
+}
+.header input[type=button]{
+    float: left;
+    margin-top: 3px;
+    padding-left: 2px;
+    width: 28px;
+    height: 24px;
+    background: url("../images/header_icon.png") no-repeat 3px -48px;
+}
+.header input[type=text]{
+    float: left;
+    width: 198px;
+    height: 28px;
+    line-height: 28px;
+}
+.login{
+    float: right;
+}
+.login .loginTop{
+    display: block;
+    float: left;
+    margin-top: 15px;
+    border: 1px solid #B25415;
+    border-radius: 3px;
+    width: 56px;
+    height: 28px;
+    color: #ffffff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);
+    text-align: center;
+    line-height: 28px;
+    background: linear-gradient(to bottom, #cc691d 0, #c25f13 100%);
+}
+.login .loginTop:hover{
+    background: linear-gradient(to bottom, #c25f13 0, #b85509 100%);
+}
+.login .link{
+    float: right;
+    margin: 15px 0 0 7px;
+    border: 1px solid #B25415;
+    border-radius: 3px;
+    height: 28px;
+    line-height: 28px;
+}
+.login .link a{
+    display: block;
+    float: left;
+    line-height: 28px;
+    border-left: 1px solid #B25415;
+    background: linear-gradient(to bottom, #cc691d 0, #c25f13 100%);
+}
+.login .link a:hover{
+    background: linear-gradient(to bottom, #c25f13 0, #b85509 100%);
+}
+.login .link .text{
+    border: none;
+    width: 60px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);
+}
+.login .link .xinlang i,.login .link .qq i{
+    display: block;
+    width: 26px;
+    height: 28px;
+    background: url("../images/header_thirdparty_icon.png") no-repeat;
+}
+.login .link .xinlang i{
+    background-position: -24px 2px;
+}
+.login .link .qq i{
+    background-position: 0 2px;
+}
+/*header end*/
+.lineNav{
+    border-bottom: 1px solid #cccccc;
+    width: 100%;
+    min-width: 1100px;
+    height: 30px;
+    line-height: 30px;
+    background: #f0f0f0;
+}
+.hot{
+    float: left;
+    padding-left: 100px;
+}
+.hot li{
+    float: left;
+    padding-right: 30px;
+}
+.hot li a{
+    font-size: 14px;
+}
+.hot li .on{
+    color: #f60;
+}
+.shortcut{
+    float: right;
+}
+.shortcut li{
+    float: left;
+    margin-left: 20px;
+}
+/*.shortcut li a{*/
+    /*display: block;*/
+/*}*/
+.shortcut b{
+    display: block;
+    float: left;
+    width: 24px;
+    height: 24px;
+}
+.shortcut .vip b{
+    background: url("../images/header_icon.png") no-repeat -70px -44px;
+}
+.shortcut .play b{
+    background: url("../images/header_icon.png") no-repeat -24px -45px;
+}
+.shortcut .down b{
+    background: url("../images/header_icon.png") no-repeat -46px -44px;
+}
+.shortcut a{
+    display: block;
+    float: left;
+    font-weight: 700;
+}
+.shortcut li:hover a{
+    color: #f60;
+}
+.shortcut .vip:hover b{
+    background-position: -70px -68px;
+}
+.shortcut .play:hover b{
+    background-position: -24px -68px;
+}
+.shortcut .down:hover b{
+    background-position: -46px -68px;
+}
+/*lineNav end*/
+.main{
+    padding: 19px 0 30px 0;
+}
+.main .musicList{
+    float: left;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    padding: 15px;
+    width: 742px;
+    background: #fff;
+}
+.main .musicList .banner{
+    position: relative;
+    overflow: hidden;
+    width: 742px;
+    height: 170px;
+}
+.main .musicList .banner ul li{
+    display: none;
+}
+.main .musicList .banner ul .on{
+    display: block;
+}
+.main .musicList .banner ul li img{
+    width: 742px;
+    height: 170px;
+}
+.main .musicList .banner ol{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 9px;
+    padding: 5px 0 5px 5px;
+    width: 65px;
+    height: 8px;
+    background: rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+.main .musicList .banner ol:hover{
+    background: rgba(0, 0, 0, .3);
+}
+.main .musicList .banner ol li{
+    float: left;
+    margin-right: 5px;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background: #ffffff;
+}
+.main .musicList .banner ol li.on{
+    background: #f60;
+}
+.main .musicList .title{
+    padding-top: 18px;
+    height: 36px;
+}
+.main .musicList .title h3{
+    float: left;
+}
+.main .musicList .title h3 strong{
+    float: left;
+    font-size: 18px;
+    font-weight: 500;
+}
+.main .musicList .title span,.main .musicList .title a{
+    display: block;
+    float: left;
+    padding: 5px 0 0 2px;
+    font-weight: 500;
+    color: #f60;
+}
+.main .musicList .title a:hover{
+    text-decoration: underline;
+}
+.like .playlist{
+    float: left;
+    margin-right: 10px;
+    width: 140px;
+    height: 222px;
+}
+.like .playlist dt{
+    position: relative;
+    padding: 3px 3px 0;
+    width: 134px;
+    height: 161px;
+    background: #3A3935;
+}
+.like .playlist dt img{
+    float: left;
+    width: 67px;
+    height: 67px;
+}
+.like .playlist dt b{
+    position: absolute;
+    top: 43px;
+    left: 46px;
+    width: 48px;
+    height: 48px;
+    background: url("../images/play_icon.png") no-repeat;
+    cursor: pointer;
+}
+.like .playlist dt b:hover{
+    background-position: -48px 0;
+}
+.like .playlist dt p{
+    padding: 0 5px;
+    height: 24px;
+    line-height: 26px;
+    color: #999999;
+}
+.like .playlist dd{
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+}
+.like .playlist dd a{
+    font-size: 18px;
+}
+.like .view{
+    float: left;
+    position: relative;
+    width: 590px;
+    height: 222px;
+}
+.like .view .btnL,.like .view .btnR{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 25px;
+    height: 50px;
+    background: url("../images/page_icon.png") no-repeat;
+}
+.like .view .btnL{
+    top: 58px;
+    left: -10px;
+    background-position: -25px 0;
+}
+.like .view .btnL:hover{
+    background-position: -25px -50px;
+}
+.like .view .btnR{
+    top: 58px;
+    right: -17px;
+    background-position: 0 0;
+}
+.like .view .btnR:hover{
+    background-position: 0 -50px;
+}
+.like .view:hover .btnL,.like .view:hover .btnR{
+    display: block;
+}
+.over{
+    overflow: hidden;
+    width: 590px;
+    height: 222px;
+}
+.album{
+    width: 2000px;
+}
+.album .one{
+    float: left;
+    margin-right: 10px;
+    width: 140px;
+    height: 222px;
+}
+.album .one dl{
+    position: relative;
+    width: 140px;
+    height: 164px;
+}
+.album .one dl dt{
+    position: relative;
+    width: 140px;
+    height: 140px;
+}
+.album .one dl dt img{
+    width: 140px;
+    height: 140px;
+}
+.album .one dl dt .mask{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 140px;
+    background: rgba(0,0,0,.6);
+}
+.album .one dl dt .mask .list{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border: 1px solid #333333;
+    border-radius: 3px;
+    width: 30px;
+    height: 14px;
+    background: #ffffff;
+}
+.album .one dl dt .mask .list b,.album .one dl dt .mask .list i{
+    display: block;
+    float: left;
+    background: url("../images/icon.png") no-repeat;
+}
+.album .one dl dt .mask .list b{
+    width: 16px;
+    height: 14px;
+    background-position: -2px -125px;
+}
+.album .one dl dt .mask .list i{
+    width: 10px;
+    height: 14px;
+    background-position: -150px -54px;
+}
+.album .one dl dt .mask .list ol{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #555555;
+    border-radius: 3px;
+    padding: 5px 0;
+    width: 84px;
+    height: 100px;
+    background: #ffffff;
+}
+.album .one dl dt .mask .list ol li a{
+    display: block;
+    height: 25px;
+    line-height: 25px;
+
+}
+.album .one dl dt .mask .list ol li a b{
+    display: block;
+    margin-left: 12px;
+    width: 20px;
+    height: 25px;
+    background: url("../images/icon.png") no-repeat;
+}
+.album .one dl dt .mask .list ol li a:hover{
+    background: #F5914E;
+    color: #fff;
+}
+.album .one dl dt .mask .list ol li .sc b{
+    background-position: -5px -120px;
+}
+.album .one dl dt .mask .list ol li .fs b{
+    background-position: -76px -120px;
+}
+.album .one dl dt .mask .list ol li .tj b{
+    background-position: -29px -120px;
+}
+.album .one dl dt .mask .list ol li .fx b{
+    background-position: -52px -120px;
+}
+
+.album .one dl dt .mask .list ol li .sc:hover b{
+    background-position: -5px -144px;
+}
+.album .one dl dt .mask .list ol li .fs:hover b{
+    background-position: -76px -144px;
+}
+.album .one dl dt .mask .list ol li .tj:hover b{
+    background-position: -29px -144px;
+}
+.album .one dl dt .mask .list ol li .fx:hover b{
+    background-position: -52px -144px;
+}
+.album .one dl dt:hover .mask{
+    display: block;
+}
+.album .one dl dt .mask .list:hover ol{
+    display: block;
+}
+.album .one dl dt .mask .playBtn{
+    display: block;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 24px;
+    height: 24px;
+    background: url("../images/play_icon.png") no-repeat 0 -48px;
+
+}
+.album .one dl dt .mask .playBtn:hover{
+    background-position: -24px -48px;
+}
+.album .one dl dd{
+    padding: 0 5px;
+    height: 24px;
+    line-height: 24px;
+    background: #f5f5f5;
+    color: #aaaaaa;
+}
+.album .one dl dd .doLike{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px 20px 0;
+    width: 100px;
+    height: 134px;
+    background: rgba(0,0,0,.6);
+    cursor: pointer;
+}
+.album .one dl dd .doLike p{
+    color: #ffffff;
+    line-height: 20px;
+}
+.album .one dl dd .doLike input{
+    margin: 15px 0 0 16px;
+    border-radius: 3px;
+    width: 68px;
+    height: 30px;
+    background: #999;
+    color: #ffffff;
+    cursor: pointer;
+}
+.album .one dl dd:hover{
+    color: #f5f5f5;
+}
+.album .one dl dd:hover .doLike{
+    display: block;
+}
+.album .one .text1 a{
+    display: block;
+    padding: 10px 0 5px;
+    font-size: 14px;
+}
+.album .one .text2 a{
+    color: #999;
+}
+.album .one .text1 a:hover,.album .one .text2 a:hover{
+    text-decoration: underline;
+}
+.bigList li{
+    border-bottom: 1px solid #ebebeb;
+    line-height: 28px;
+}
+.bigList li .time{
+    float: right;
+    padding-right: 10px;
+    color: #aaaaaa;
+}
+.bigList li .like{
+    float: right;
+    padding-right: 15px;
+    width: 270px;
+    color: #aaaaaa;
+}
+.bigList li .title{
+    padding-left: 10px;
+}
+.bigList li .title b{
+    display: inline-block;
+    font-weight: 500;
+    color: #aaaaaa;
+}
+.bigList li .title i{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url("../images/glory_icon.png") no-repeat;
+    background-position: -54px -187px;
+    vertical-align: middle;
+}
+.bigList li:hover .top{
+    display: none;
+}
+.bigList li .blockList{
+    display: none;
+    background: #cccccc;
+}
+.bigList li:hover .blockList{
+    display: block;
+}
+
+/*musicList end*/
+.main .music{
+    float: right;
+    width: 302px;
+    background: #ffffff;
+    height: 300px;
+}
+.main .listen{
+    padding: 15px 15px 0;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    background: #ffffff;
+}
+.main .listen .title{
+    padding-bottom: 13px;
+    border-bottom: 1px solid #ebebeb;
+}
+.main .listen .title h4{
+    float: left;
+    font-size: 14px;
+    font-weight: 500;
+}
+.main .listen .title a{
+    float: right;
+    width: 18px;
+    height: 16px;
+    background: url("../images/icon1.png") no-repeat 0 5px;
+}
+.main .listen .title a:hover{
+    background-position: 0 -17px;
+}
+.main .listen .img{
+    position: relative;
+    padding-top: 20px;
+}
+.main .listen .img .time{
+    position: absolute;
+    top: 13px;
+    left: 7px;
+    padding: 8px 10px 0 18px;
+    width: 42px;
+    height: 72px;
+    background: url("../images/icon1.png") no-repeat -40px 0;
+    text-align: center;
+}
+.main .listen .img .time li{
+    color: #FFFFFF;
+    font-weight: 700;
+}
+.main .listen .img .time .day{
+    font-size: 18px;
+}
+.main .listen .img .thImg img{
+    width: 270px;
+    height: 270px;
+}
+.main .listen .img .playBtn{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -24px;
+    margin-top: -24px;
+    width: 48px;
+    height: 48px;
+    background: url("../images/play_icon.png") no-repeat;
+}
+.main .listen .img .playBtn:hover{
+    background-position: -48px 0;
+}
+.main .listen .img:hover .playBtn{
+    display: block;
+}
+
+.main .listen .oneLast{
+    height: 40px;
+    background: #f5f5f5;
+}
+.main .listen .oneLast .one,.main .listen .oneLast .last{
+    position: relative;
+    float: left;
+    width: 135px;
+    height: 40px;
+}
+.main .listen .oneLast .one{
+    width: 134px;
+    border-right: 1px solid #ebebeb;
+}
+.main .listen .oneLast .one a,.main .listen .oneLast .last a{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    margin-top: -12px;
+    margin-left: -12px;
+    width: 24px;
+    height: 24px;
+    background: url("../images/icon1.png") no-repeat;
+}
+.main .listen .oneLast .one a{
+    background-position: 0 -170px;
+}
+.main .listen .oneLast .one a:hover{
+    background-position: 0 -201px;
+}
+.main .listen .oneLast .last a{
+    background-position: 0 -44px;
+}
+.main .listen .oneLast .last a:hover{
+    background-position: 0 -70px;
+}
+.live{
+    margin-top: 20px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+}
+.live .title{
+    padding-left: 15px;
+    height: 41px;
+    line-height: 41px;
+    color: #ffffff;
+    font-size: 14px;
+    background: url("../images/tit_hot_room.png") no-repeat;
+}
+.live ul{
+    padding: 10px 0;
+    background: #ffffff;
+}
+.live ul .liTop{
+    position: relative;
+    padding: 10px 15px;
+    height: 50px;
+}
+.live ul .liTop:hover{
+    background: #e0e0e0;
+}
+.live ul .liTop dl dt{
+    float: left;
+}
+.live ul .liTop dl dt .img{
+    float: left;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.live ul .liTop dl dt img{
+    width: 50px;
+    height: 50px;
+}
+.live ul .liTop dl dt .name{
+    float: left;
+    padding-left: 10px;
+}
+.live ul .liTop dl dt .name .nameTop{
+    height: 24px;
+    line-height: 24px;
+}
+.live ul .liTop dl dt .name .nameTop a:hover{
+    text-decoration: underline;
+}
+.live ul .liTop dl dt .name .nameTop b{
+    display: inline-block;
+    margin-left: 5px;
+    width: 12px;
+    height: 12px;
+    background: url("../images/glory_icon.png") no-repeat -54px -187px;
+    vertical-align: middle;
+}
+.live ul .liTop dl dt .name .nameTop i{
+    display: inline-block;
+    margin-left: 5px;
+    width: 12px;
+    height: 12px;
+    background: url("../images/icons.png") no-repeat 0 -53px;
+    vertical-align: middle;
+}
+.live ul .liTop dl dt .name .nameBot{
+    height: 24px;
+    line-height: 24px;
+}
+.live ul .liTop dl dt .name .nameBot span{
+    display: inline-block;
+    margin-right: 3px;
+    width: 12px;
+    height: 10px;
+    background: url("../images/sprites.png") no-repeat -250px -50px;
+    vertical-align: middle;
+}
+.live ul .liTop dl dt .name .nameBot b{
+    color: #999999;
+    font-weight: 500;
+}
+.live ul .liTop dl dd{
+    float: right;
+    padding: 13px 5px 0 0;
+}
+.live ul .liTop dl dd a{
+    display: block;
+    border-radius: 3px;
+    width: 56px;
+    height: 24px;
+    line-height: 24px;
+    background: #ff6600;
+    text-align: center;
+    color: #FFFFFF;
+}
+.live ul .liTop .box{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    left: -100px;
+    padding: 6px;
+    width: 333px;
+    height: 220px;
+    background: url("../images/box_bg.png") no-repeat;
+}
+.live ul .liTop .box .btn{
+    position: absolute;
+    top: -6px;
+    right: 40px;
+    width: 15px;
+    height: 13px;
+    background: url("../images/box_bg.png") no-repeat -50px -250px;
+}
+.live ul .liTop .box .boxCon{
+    border: 1px solid #c6cacc;
+    border-radius: 2px;
+    background: #FFFFFF;
+}
+.live ul .liTop .box .boxCon .blue{
+    padding: 15px 0 0 20px;
+    height: 65px;
+    background: #f5f9fa;
+}
+.live ul .liTop .box .boxCon .blue .pic{
+    float: left;
+    margin-right: 10px;
+    border: 1px solid #aaaaaa;
+    border-radius: 2px;
+    width: 50px;
+    height: 50px;
+}
+.live ul .liTop .box .boxCon .blue .pic img{
+    width: 50px;
+    height: 50px;
+}
+.live ul .liTop .box .boxCon .blue .name p{
+    height: 24px;
+    line-height: 24px;
+}
+.live ul .liTop .box .boxCon .blue .name .tit .pmq{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    width: 12px;
+    height: 12px;
+    background: url("../images/glory_icon.png") no-repeat -54px -187px;
+}
+.live ul .liTop .box .boxCon .blue .name .tit .vip{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    width: 12px;
+    height: 12px;
+    background: url("../images/icons.png") no-repeat 0 -53px;
+}
+.live ul .liTop .box .boxCon .blue .name .sex span{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 12px;
+    height: 12px;
+    background: url("../images/icon2.png") no-repeat -112px -22px;
+}
+.live ul .liTop .box .boxCon .blue .name .sex b{
+    padding-right: 4px;
+    font-weight: 500;
+    color: #666666;
+}
+.live ul .liTop .box .boxCon .play_count{
+    padding: 12px 0 12px 20px;
+    height: 22px;
+    line-height: 22px;
+}
+.live ul .liTop .box .boxCon .play_count b{
+    float: left;
+    padding-right: 10px;
+    font-weight: 500;
+    color: #666666;
+}
+.live ul .liTop .box .boxCon .play_count span{
+    float: left;
+    margin-right: 1px;
+    border-radius: 2px;
+    width: 20px;
+    height: 22px;
+    background: #5c7284;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+.live ul .liTop .box .boxCon .info{
+    overflow: hidden;
+    border: 1px solid #f0f0f0;
+    border-left: none;
+    border-right: none;
+    width: 330px;
+    height: 40px;
+}
+.live ul .liTop .box .boxCon .info ul{
+    padding: 0;
+    width: 333px;
+}
+.live ul .liTop .box .boxCon .info li{
+    float: left;
+    border-right: 1px solid #f0f0f0;
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.live ul .liTop .box .boxCon .info li a{
+    color: #999;
+}
+.live ul .liTop .box .boxCon .info li a span{
+    padding-left: 5px;
+    color: #f60;
+}
+.live ul .liTop .box .boxCon .boxLast{
+    padding: 12px 0 0 20px;
+    height: 38px;
+}
+.live ul .liTop .box .boxCon .boxLast a{
+    float: left;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    width: 81px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    color: #666;
+}
+.live ul .liTop .box .boxCon .boxLast .gif img{
+    vertical-align: -5px;
+    padding-right: 2px;
+}
+.live ul .liTop .box .boxCon .boxLast .gz b{
+    display: inline-block;
+    width: 12px;
+    height: 13px;
+    background: url("../images/icon2.png") no-repeat -293px -110px;
+}
+.live ul .liTop .box .boxCon .boxLast a:hover{
+    color: #f60;
+}
+.live ul .liTop:hover .box{
+    display: block;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            background: #f1f1f1;
+            position: relative;
+        }
+        h1{
+            position: absolute;
+            top: 20px;
+            width: 200px;
+            height: 200px;
+            background: #44cdd9;
+            z-index: 999999;
+        }
+        .one{
+            position: absolute;
+            top: 20px;
+            width: 200px;
+            height: 200px;
+            background: #8686ff;
+        }
+    </style>
+</head>
+<body>
+    <div>1
+        <h1>2</h1>
+        <p class="one">3</p>
+        只有在脱离文档流的时候并且是兄弟级别的时候  才可以起作用
+        父级和子级的时候 也是不起作用只有在脱离文档流的时候并且是兄弟级别的时候  才可以起作用
+
+    </div>
+    z-index: 0;
+    只有在脱离文档流的时候并且是兄弟级别的时候  才可以起作用
+     父级和子级的时候 也是不起作用
+
+
+margin
+
+上下的时候 有塌陷
+
+margin-top  父子元素的margin-top 传递问题 解决overflow hidden
+
+浮动元素 左右margin 会加倍 (ie6 双边距问题 解决overflow hidden)
+    <style>
+        li{
+            list-style: none;
+            float: left;
+            width: 100px;
+            height: 100px;
+            background: #8686ff;
+            margin-right: 20px;
+        }
+    </style>
+<ul>
+    <li></li>
+    <li></li>
+</ul>
+
+</body>
+</html>

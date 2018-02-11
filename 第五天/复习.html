@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>复习</title>
+</head>
+<body>
+    html
+    css
+    {
+     引入方式
+     选择器
+     常见的属性
+     float---clear overflow
+     display inline-block inline
+     background
+    }
+    盒子模型  内容 内边距 边框 外边距
+    盒子的宽度 内容 内边距 边框
+    内容的宽度 width
+
+    float  清除浮动的方式
+    设置父级元素的宽度和高度
+    溢出隐藏 overflow
+    clear both  ---- 最好的
+
+    清除浮动的位置
+
+
+元素类型有
+块级元素 -- 特点 独占一行 可以设置宽高 内外边距 不设置宽度和高度的情况下，宽度是充满父级元素 高度是内容的高度
+行内元素 -- 特点 不能独占一行 在一定宽度内从左到右进行排列 到宽度的边缘 会另起一行  不可以设置宽高 可以设置左右的内边距和外边距 宽度和高度是由内容的宽度和高度决定的
+
+float元素的特点不区分行内元素和块级元素
+    脱离文档流（行内和块级元素都有的特点）
+    块级元素：脱离文档流，可以在一行显示 可以设置宽高 内外边距 不设置宽度和高度的情况下，宽度回归内容本身的宽度和高度（盒子本身的宽度和高度）
+    行内元素：具有块级元素的特点
+
+    <style>
+        p{
+            /*css属性的书写习惯*/
+            /*清除默认样式--整体css样式控制*/
+            /*选择器里面的书写习惯--css属性的排列*/
+            display: block;
+            overflow: hidden;
+            position: relative;
+            float: left;
+            /*position float是任选其一*/
+            margin: auto;
+            border: hidden;
+            padding: inherit;
+            width: inherit;
+            height: inherit;
+            background: inherit;
+            /*inherit -- 默认*/
+            font: inherit;
+            color: inherit;
+        }
+        /*不是说只有这样写才能出正确的样式 而是一种书写习惯 */
+    </style>
+
+</body>
+</html>

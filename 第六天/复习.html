@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+浮动元素的特征？
+1、让行内元素具有了块级元素的属性，可以设置宽高、内外边距
+<!--<span style="border: 20px solid #000;"></span>-->
+2、可以使块级元素在一行显示
+3、脱离文档流，浮动后面的元素，会占据浮动元素的位置
+4、在不设置盒子高度和宽度的情况下，盒子的宽高回归内容本身的宽度和高度
+
+定位的几种方式 分别的特点？
+相对定位
+特点
+参照物是盒子本身
+没有脱离文档流，不会影响后面的元素的正常显示
+层级发生改变
+一般配合绝对定位使用（给绝对定位设置一个参照物，这个参照物一般是他的父级元素）
+绝对定位
+特点
+参照物在没有设定相对定位的时候，参照物是body，或者设置了参照物一般是他的父级元素（给父级元素一个相对定位的属性）---（给参照物的时候，参照物是包含这个要定位的元素的元素）
+脱离了文档流，后面的元素会占据绝对元素的位置
+层级发生了改变
+使行内元素具有块级元素的属性，宽高，内外边距
+固定定位
+参照物是浏览器的可视窗口
+脱离了文档流
+ie6不兼容
+是行内元素具有块级元素的特点
+
+*************
+当绝对定位的盒子的父级元素是相对定位、绝对定位和固定定位的时候，他的参照物不局限于相对定位，以上三种都能实现参照物的功能（就近原则）
+*************
+<style type="text/css">
+    body,div,ul,li{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        position: relative;
+        /*相对定位--给要定位的盒子一个参照物*/
+        border: 2px solid #cccccc;
+        width: 600px;
+        height: 600px;
+        line-height: 40px;
+        /*垂直居中*/
+    }
+    .box1{
+        position: fixed;
+        /*绝对定位*/
+        bottom: 20px;
+        left: 10px;
+        width: 400px;
+        height: 400px;
+        background: #00c0a5;
+    }
+    .box2{
+        position: absolute;
+        /*绝对定位*/
+        top: 30px;
+        right: 30px;
+        width: 200px;
+        height: 200px;
+        background: #ffffff;
+    }
+</style>
+
+<div class="box">
+    box文字
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</div>
+
+
+怎么样让几个盒子在同一水平线上排列？
+display:inline-block/inline
+float:left/right
+
+行高line-height的作用形式或者说能起到什么作用？
+在固定的高度中垂直居中
+
+清除浮动的几种方式？
+overflow:hidden
+clear:both
+给父级元素设置宽度和高度
+
+background的常用属性有几种？
+<style>
+    p{
+        /*background: ;*/
+        /*
+        css属性 不是标签
+        可以使多个小图标在一张背景图片上，统一引用，用定位来设置图标的位置，减少http请求，加快加载速度
+        调用这个属性的元素在不设置宽度和高度的时候，背景图片不会主动显示，不会占据任何的空间（页面的空间）
+        */
+        background-image: url("图片的相对路径");/*一般情况下是相对路径*/
+        background-color: #ffffff;/*背景颜色*/
+        background-position: center;/*位置*/
+        background-repeat: inherit;/*平铺*/
+        background-size: auto;/*尺寸-单独写*/
+        background: url("") no-repeat center #ffffff;
+    }
+    img{
+        /*
+        用在html页面中，是一个标签，应用范围是常常跟换的元素
+        自带宽高的属性（在首页的时候一定要在css样式中设置img的宽度和高度），这个元素会主动的中显示，占据页面的空间
+        */
+    }
+</style>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>css的继承</title>
+    <style type="text/css">
+        div{
+            width: 300px;
+            height: 400px;
+            background-color: red;
+        }
+        ul{
+
+        }
+        /*控制台的使用 审查元素/f12（快捷键）/检查元素*/
+    </style>
+</head>
+<body>
+html{
+    head{}
+    body{
+        <div>
+            <!-- 300px*400px-->
+            <ul>
+                <!-- 300px*18px-->
+                <li>
+                    <!-- 260px*18px-->
+                    测试文档 测试文档
+                </li>
+            </ul>
+        </div>
+    }
+}
+关于css的继承
+<style>
+    div{
+        width: 300px;
+        height: 300px;
+        /*上面的是不可继承的*/
+        font-family: "Microsoft Yahei", simSun;
+        font-size: 14px;
+        text-align: center;
+        /*可继承的  一般针对文字的属性基本上是可以继承的*/
+        background-color: rgb(0,0,0);
+        /*background-color 不可继承的*/
+        /*(0-255,0-255,0-255)*/
+        color: #ffffff;
+        /*color 可继承的*/
+        /*css中的色值 可以使用英文单词 或 16进制的色值 或 rgb*/
+        text-decoration: underline;
+        /*可继承的*/
+        /*display: block;
+        /!*行内元素转化为块级元素*!/
+        display: none;
+        /!*隐藏*!/
+        display: inline-block;
+        /!*行内元素转化为块级元素并在一行显示*!/
+        display: inline;
+        /!*将块级元素放到一行显示*!/*/
+        border: 1px solid #cccccc;
+        padding: 10px;
+        /*内边距*/
+        margin: auto;
+        /*外边距*/
+
+    }
+</style>
+可继承的css属性有哪些？
+
+
+不可继承的css属性有哪些？
+
+width  height
+块级元素的特点：会独占一行 可以设置宽高 可以设置外边距 内边距 如果当前元素没有设定宽高的情况下，它会充满父级元素的空间（仅限于宽度）
+
+
+
+
+
+
+
+li继承了ul的样式
+但是 我上面的div有一个id的名称
+
+<div id="div1">
+    <ul class="ul1">
+        <li>
+            <span>文字</span>
+        </li>
+    </ul>
+</div>
+<style type="text/css">
+    #div1 li{ 100+1
+        width: 100px;
+        height: 200px;
+        background-color: #00c0a5;
+        color: #ffffff;
+    }
+    .ul1 li{10+1
+        width: 100px;
+        height: 200px;
+        background-color: #f06373;
+        color: #00c0a5;
+    }
+</style>
+
+
+
+</body>
+</html>

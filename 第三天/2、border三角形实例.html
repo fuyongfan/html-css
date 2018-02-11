@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>border三角形实例</title>
+    <style type="text/css">
+        *{
+            /*通用选择器   选择所有的元素 不建议使用 兼容有问题*/
+            /*display: none;*/
+        }
+        body,div,span,img,input{
+            margin: 0;
+            padding: 0;
+        }
+        img,input{
+            border: 0;
+        }
+        .div1{
+            /*
+            块级元素 独占一行  可以设置宽高和内外边距  不设置宽高的时候会充满父级元素（宽）
+            行内元素 不能设置宽高 宽高是内容的宽高 排列顺序是从左到右（在一定宽度内） 可以设置左右的外边距和内边距 不能设置上下的外边距和内边距
+            
+            特殊的行内元素 *****************************
+            img--
+            input--
+            1、带有隐藏的样式 width 和 height----在首页上的图片我们要在css样式中规定宽度和高度
+            2、在不进行块级元素转换的时候 也可以修改图片的宽度和高度
+            br---换行
+            */
+            border: 30px solid;
+            border-color: transparent red transparent red;
+            /* 上 右 下 左*/
+
+            /* transparent 让边框的一侧值变得透明 */
+            /*width: 30px;*/
+            /*height: 30px;*/
+        }
+        span{
+            width: 200px;
+            height: 200px;
+            padding: 200px;
+            margin: 100px;
+            background-color: #2196f3;
+            /*border: 30px solid;*/
+            /*border-color: transparent red transparent red;*/
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        input{
+            /*input 自带边框*/
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="div1"></div>
+<span>文字 文字 文字文字 文字</span>
+<img src="1386913312.jpg" alt=""/>
+<input type="text"/>
+</body>
+</html>

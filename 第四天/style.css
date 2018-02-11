@@ -1,0 +1,49 @@
+body,div,img{
+    margin: 0;
+    padding: 0;
+}
+ul,ol,li{
+    list-style: none;
+}
+img,input{
+    border: none;
+    vertical-align: middle;
+    /*display: block;  行内元素变为块级元素 让元素具有块级元素的特征（属性） */
+    /*让图片和input这两个特殊的行内元素居中显示
+    如果一个标签中 文字+img/input 如果没有vertical-align: middle;属性 那么文字会在最下方显示，加上这个属性之后，文字和元素是垂直居中显示
+    行内元素（img或者input默认会有一定高度或者行高，这些属性会影响他的显示效果，vertical-align: middle;这个属性可以将这些自带的属性清除掉）
+    */
+}
+/*input{*/
+    /*border: 1px solid #39b3be;*/
+    /*width: 200px;*/
+    /*height: 100px;*/
+/*}*/
+.box{
+    width: 1210px;
+    height: 403px;
+    background-color: #2eafbb;
+}
+.box div , .box img{
+    float: left;
+}
+/*精简代码 把具有相同css属性的标签放在一起进行设置*/
+/*.box img{*/
+    /*float: left;*/
+/*}*/
+/*
+浮动的盒子的宽度和高度回归自身盒子的宽度和高度
+*/
+/*
+.box .pic1{
+    width: 607px;
+    height: 403px;
+}
+.box .pic2{
+    width: 603px;
+    height: 202px;
+}
+.box .pic3{
+    width: 603px;
+    height: 200px;
+}*/

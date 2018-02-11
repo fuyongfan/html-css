@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body,div,h1{
+            margin: 0;
+            padding: 0;
+        }
+        /*
+        id在一个页面只能用一次
+        权重高 不是所有盒子都需要很高的权重进行控制
+        js中会调用id 来给相关的元素来进行效果（功能）的添加
+        */
+        .header{
+            width: 100%;
+            /*min-width: 1000px;*/
+            /********在宽度自适应（有背景图片或者背景颜色的时候 一定要设置min-width）
+            800px 是一个固定布局的版心
+            *********/
+            height: 50px;
+            background: #666666;
+        }
+        .nav{
+            margin: 0 auto;
+            width: 1000px;
+            height: 40px;
+            background: #44cdd9;
+        }
+        .content{
+            margin: 0 auto;
+            width: 1000px;
+            height: 500px;
+            background: #30bd72;
+        }
+        .footer{
+            margin: 0 auto;
+            width: 1000px;
+            height: 100px;
+            background: #191d3a;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <!-- 头部 -->
+    <!--<h1 class="logo">-->
+        <!--&lt;!&ndash; logo 商标 企业标识 &ndash;&gt;-->
+    <!--</h1>-->
+    <div class="nav">
+        <!-- 导航 -->
+    </div>
+</div>
+<!--html4的写法-->
+<!--<header>
+    <h1 class="logo"></h1>
+    <nav></nav>
+</header>
+html5将标签语义化发扬光大
+ie8以上支持
+-->
+<!--以上是头部-->
+<div class="content">
+    <!-- 大图轮播 banner -->
+    <!--<div class="banner"></div>-->
+    <!--<ul>-->
+        <!--<li></li>-->
+    <!--</ul>-->
+    <!--<div></div>-->
+    <!--<a href=""></a>-->
+</div>
+<!--<comment>-->
+    <!--&lt;!&ndash; html5 内容 &ndash;&gt;-->
+<!--</comment>-->
+<!--内容部分-->
+
+<div class="footer">
+    <!--页脚信息/版权信息-->
+</div>
+<!--<footer>-->
+    <!--&lt;!&ndash; html5 页面底部 &ndash;&gt;-->
+<!--</footer>-->
+<!--页面的底部-->
+
+
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li>不要底边框</li>
+</ul>
+相同样式的元素有一个样式特殊，尽量给第一个
+
+</body>
+</html>

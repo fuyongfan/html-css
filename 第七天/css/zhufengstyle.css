@@ -1,0 +1,120 @@
+body,div,dl,dt,dd,h1,h2,h3,h4,h5,h6,a,span{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft Yahei", simSun;
+    font-size: 14px;
+    color: #616161;
+}
+a{
+    text-decoration: none;
+}
+input{
+    border: none;
+    vertical-align: middle;
+}
+.clear{
+    clear: both;
+    height: 0;
+    line-height: 0;
+}
+/*默认样式的清除*/
+body{
+    background-color: #f1f2f6;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -272px 0 0 -254px;
+    border: 1px solid #dedfe3;
+    width: 508px;
+    height: 544px;
+    background-color: #ffffff;
+}
+.title{
+    height: 70px;
+    line-height: 70px;
+}
+.title a{
+    float: left;
+    width: 254px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #f5f5f5;
+}
+.title .on{
+    background-color: #ffffff;
+}
+.login{
+    padding: 21px 67px 0 67px;
+}
+.login dl{
+    padding-top: 18px;
+    height: 75px;
+}
+.login dl dt{
+    height: 31px;
+    line-height: 31px;
+    font-weight: 900;
+}
+.login dl dd input{
+    border: 1px solid #e1e1e1;
+    border-radius: 3px;
+    padding: 0 14px;
+    width: 346px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    color: #919191;
+}
+.login p{
+    height: 77px;
+}
+.login p input{
+    border: 1px solid #608927;
+    border-radius: 3px;
+    outline: none;
+    width: 374px;
+    height: 44px;
+    background-color: #7cb132;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.login p input:hover{
+    background-color: #608927;
+}
+.login .icon{
+    position: relative;
+    /*这里给了参照物 宽度要不要设置*/
+    height: 40px;
+}
+.login .icon p{
+    border-bottom: 1px solid #f1f1f1;
+    height: 20px;
+}
+.login .icon a{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -40px;
+    width: 80px;
+    height: 40px;
+    background: url("../images/btn.png") no-repeat center #ffffff;
+}
+.login .icon a:hover{
+    background-image: url("../images/btn_hover.png");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

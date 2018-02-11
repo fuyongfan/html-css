@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>分页练习</title>
+    <style type="text/css">
+        body,ul,li {
+            margin: 0;
+            padding: 0;
+        }
+        ul,ol,li{
+            /*ul he ol是必须有的 li可有可无*/
+            list-style: none;
+            /*去掉列表的默认样式*/
+        }
+        ul{
+            padding-left: 30px;
+            background-color: palevioletred;
+        }
+        ul li{
+            margin: 1px 5px;
+            /*块级元素在一行显示  float  display*/
+            /*display: inline-block;*/
+            /*将块级元素在一行显示 并且保留块级元素的属性*/
+            /*display: inline;*/
+            /*将块级元素变成行内元素*/
+            /*
+            会让块级元素的宽度变成内容+内边距+边框的值
+            让块级元素在一行的同时，会在每个元素之间产生空隙，这个空隙是由标签与标签之间的空格影响的
+            */
+            float: left;
+            /*会让块级元素的宽度变成内容+内边距+边框的值 并且ul变得不存在的一般*/
+            padding: 10px 20px;
+            border: 1px solid #cccccc;
+            font-size: 16px;
+            background-color: #fff;
+            /*十六进制的色值*/
+        }
+        .clear{
+            clear: both;
+            height: 0;
+            line-height: 0;
+        }
+        /*
+            为什么给ul padding值 而不给第一个li margin值？
+            1、margin有兼容问题
+            2、工作中的列表（可循环使用的列表）尽量不要有特殊的样式（class/id），如果一定要有一个特殊的样式，尽量给第一个不要给最后一个
+        */
+        /*
+            块级元素的宽度充满父级元素 高度有子级元素的内容撑开的
+        */
+        /*
+        ul 无序列表
+            li
+        ol 有序列表
+            li
+        dl 定义列表
+        */
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="on">返回</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>...162</li><li>下一页</li>
+        <!--<div class="clear"></div>-->
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div style="height: 200px;width:200px;background: #f8f8f8;float: left;">
+网页制作 设计稿实现成静态页面（html+css+js）
+
+静态页面的制作有几种布局
+流动布局（标准的文档流布局） 遵从文档流 （块级元素和行内元素各自遵循各自的规则进行排布）
+浮动布局  脱离了文档流  改变块级元素和行内元素的特点 来进行页面布局
+层布局
+
+块级盒子在一行显示 有几种方法
+display inline-block / inline
+float left / right
+inline-block left right  盒子在一行显示 并且还保留了块级元素的特性（保留了可以设置宽度和高度 padding值 margin值 border） （只除了一点就是宽度 宽度变成盒子本身的宽度（宽度没有设置的情况下） content+padding+border）
+</div>
+<style>
+    div {
+        width: 200px;
+        height: 200px;
+        float: left;
+        background: #afbecf;
+        border: 2px solid #2fbc71;
+        font-size: 20px;
+    }
+</style>
+<div class="box1">1</div>
+<div class="box2">2</div>
+<div class="box3">3</div>
+<div class="box4">4</div>
+</body>
+</html>

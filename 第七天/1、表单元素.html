@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>表单元素</title>
+</head>
+<body>
+什么是表单元素？
+表单元素是用来获取用户信息的一个途径，通过某种方式将信息传递到服务器进行存储，待用户再次登录的是将后台信息和用户输入的信息进行比对（js的正则），正确的时候直接登录，错误的时候提示错误（哪里错误提示哪里）
+<form action="name.jsp" method="post/get">
+    <!--
+    form 是用来包裹表单元素的一个标签
+    action 将获取的信息传递到这个文件中
+    method 获取信息的方式
+    post  安全性高，编写比较复杂
+    get   安全性低，编写比较容易
+    -->
+    <!--
+    type  规定了表单的类型
+    name  表单的名称（描述表单元素）
+    value 值 获取的用户信息 又时会通过value进行返值
+    label 包裹着表单的名称或者用途
+    for   for里面的值是后面表单里id的值（id的名称） 这个属性起到的作用是点击文字直接跳转到相对于的表单元素中
+    -->
+    <label for="text">用户名：</label><input type="text" name="" value="" id="text" style="width: 200px;height: 200px;"/>
+    <!-- text 文本框 -->
+    <label for="password">密码：</label><input type="password" name="" value="" id="password"/>
+    <!-- password 密码框 -->
+    <label for="ser">验证码：</label><input type="text" name="" value="" id="ser"/>
+    <!--<label for="checkbox">多选（一个或多个）爱好：</label><input type="checkbox" name="" value="" id="checkbox"/>-->
+    <label>男：</label><input type="checkbox" name="" value=""/>
+    <label>女：</label><input type="checkbox" name="" value=""/>
+    <label for="radio">（单选）男：</label><input type="radio" name="radio" checked="checked" value="" id="radio"/>
+    <label for="radio1">（单选）女：</label><input type="radio" name="radio" value="" id="radio1"/>
+    <!--
+    checked="checked" 或者单独写checked 都可以实现默认选中的状态
+    单选框 radio 的name值相同的时候可以实现二选一或者多选一的效果
+    -->
+    <label>上传：</label><input type="file" name="" value=""/>
+    <!-- file 上传文件 -->
+    <label>省（直辖市/自治区）</label>
+    <select>
+        <!-- select 下拉框-->
+        <option value="北京市">北京市</option>
+        <option value="黑龙江">黑龙江</option>
+        <option value="河北省">河北省</option>
+        <option>河南省</option>
+        <option>广东省</option>
+        <option>台湾省</option>
+        <option>香港</option>
+        <option>澳门</option>
+        <option>山东省</option>
+    </select>
+    <input type="reset" name="重置" value="重置"/>
+    <!-- reset 重置按钮 -->
+    <input type="button" name="" value="提交"/>
+    <!-- button 普通按钮 不给任何功能的时候 什么作用都没有-->
+    <input type="submit" name="" value=""/>
+    <!-- submit 提交按钮 这个按钮会将表单的数据进行直接的提交-->
+    <label>自我介绍：</label>
+    <textarea name="" value="">
+
+    </textarea>
+    <!-- 多行文本框 -->
+</form>
+
+form 里面 有
+名字
+密码
+爱好 （歌剧 电影 旅游 打豆豆 睡觉 吃饭 读书）多选
+性别 单选
+自我介绍
+地区：省 市 县
+提交按钮
+每一个都在一行
+
+</body>
+</html>

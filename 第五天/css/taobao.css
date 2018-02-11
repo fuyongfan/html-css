@@ -1,0 +1,45 @@
+body,div,img{
+    margin: 0;
+    padding: 0;
+}
+img{
+    position: absolute;
+    border: none;
+    vertical-align: middle;
+}
+.box{
+    position: relative;
+    /*指定参照物*/
+    width: 432px;
+    height: 281px;
+    background: #f8f8f8;
+}
+.img2{
+    left: 0;
+    bottom: 0;
+    /*z-index: 1;*/
+    /*没有单位*/
+}
+.img3{
+    top: 0;
+    left: 146px;
+}
+.img4{
+    top: 0;
+    /*left: 292px;*/
+    right: 0;
+}
+.img5{
+    right: 0;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+

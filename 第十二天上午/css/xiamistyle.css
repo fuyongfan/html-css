@@ -1,0 +1,419 @@
+body,div,ul,ol,li,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,a,span,img,input,table,tr,th,td,b,i,em,strong,font,form,label,textarea{
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif , "宋体";
+    font-size: 12px;
+    color: #333333;
+}
+body{
+    background: #f5f5f5;
+}
+img,input{
+    border: none;
+    vertical-align: middle;
+}
+input{
+    outline: none;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clear{
+    clear: both;
+    height: 0;
+    line-height: 0;
+}
+.w1100{
+    margin: 0 auto;
+    width: 1100px;
+}
+/*clear end*/
+.header{
+    width: 100%;
+    min-width: 1100px;
+    height: 60px;
+    background: #f87f1c;
+}
+.header h1{
+    float: left;
+    width: 207px;
+    height: 60px;
+}
+.header h1 a{
+    display: block;
+    width: 200px;
+    height: 60px;
+    background: url("../images/default.png") no-repeat;
+}
+.header h1 a:hover{
+    background-position: 0px -60px;
+}
+.header .nav{
+    float: left;
+    width: 200px;
+    height: 60px;
+}
+.header .nav li{
+    float: left;
+    width: 90px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+.header .nav li a{
+    font-size: 16px;
+    color: #ffffff;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+    /*
+    0   阴影的左右偏移量
+    1px 阴影的上下偏移量
+    1px 阴影的扩散范围
+    */
+    /*text-shadow 文字阴影*/
+    /*border-shadow: ;*/
+    /*box-shadow: ;*/
+}
+.header .nav .home{
+    background: linear-gradient(to bottom, #db6600 0, #f57614 100%);
+    /*背景颜色的线性渐变*/
+}
+.navList{
+    float: left;
+    margin-top: 15px;
+    border: 1px solid #db6b16;
+    border-radius: 3px;
+}
+.navList a{
+    display: block;
+    float: left;
+    border-right: 1px solid #db6b16;
+    width: 60px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);
+}
+.navList .last{
+    border-right: none;
+}
+.header form{
+    display: block;
+    float: left;
+    margin: 15px 0 0 20px;
+    border: 1px solid #db6b16;
+    border-radius: 3px;
+    width: 228px;
+    height: 28px;
+    line-height: 28px;
+    background: #ffffff;
+    /*
+    background是一个符合属性
+    */
+}
+.header input[type=button]{
+    float: left;
+    margin-top: 3px;
+    padding-left: 2px;
+    width: 28px;
+    height: 24px;
+    background: url("../images/header_icon.png") no-repeat 3px -48px;
+}
+.header input[type=text]{
+    float: left;
+    width: 198px;
+    height: 28px;
+    line-height: 28px;
+}
+.login{
+    float: right;
+}
+.login .loginTop{
+    display: block;
+    float: left;
+    margin-top: 15px;
+    border: 1px solid #B25415;
+    border-radius: 3px;
+    width: 56px;
+    height: 28px;
+    color: #ffffff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);
+    text-align: center;
+    line-height: 28px;
+    background: linear-gradient(to bottom, #cc691d 0, #c25f13 100%);
+}
+.login .loginTop:hover{
+    background: linear-gradient(to bottom, #c25f13 0, #b85509 100%);
+}
+.login .link{
+    float: right;
+    margin: 15px 0 0 7px;
+    border: 1px solid #B25415;
+    border-radius: 3px;
+    height: 28px;
+    line-height: 28px;
+}
+.login .link a{
+    display: block;
+    float: left;
+    line-height: 28px;
+    border-left: 1px solid #B25415;
+    background: linear-gradient(to bottom, #cc691d 0, #c25f13 100%);
+}
+.login .link a:hover{
+    background: linear-gradient(to bottom, #c25f13 0, #b85509 100%);
+}
+.login .link .text{
+    border: none;
+    width: 60px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);
+}
+.login .link .xinlang i,.login .link .qq i{
+    display: block;
+    width: 26px;
+    height: 28px;
+    background: url("../images/header_thirdparty_icon.png") no-repeat;
+}
+.login .link .xinlang i{
+    background-position: -24px 2px;
+}
+.login .link .qq i{
+    background-position: 0 2px;
+}
+/*header end*/
+.lineNav{
+    border-bottom: 1px solid #cccccc;
+    width: 100%;
+    min-width: 1100px;
+    height: 30px;
+    line-height: 30px;
+    background: #f0f0f0;
+}
+.hot{
+    float: left;
+    padding-left: 100px;
+}
+.hot li{
+    float: left;
+    padding-right: 30px;
+}
+.hot li a{
+    font-size: 14px;
+}
+.hot li .on{
+    color: #f60;
+}
+.shortcut{
+    float: right;
+}
+.shortcut li{
+    float: left;
+    margin-left: 20px;
+}
+/*.shortcut li a{*/
+    /*display: block;*/
+/*}*/
+.shortcut b{
+    display: block;
+    float: left;
+    width: 24px;
+    height: 24px;
+}
+.shortcut .vip b{
+    background: url("../images/header_icon.png") no-repeat -70px -44px;
+}
+.shortcut .play b{
+    background: url("../images/header_icon.png") no-repeat -24px -45px;
+}
+.shortcut .down b{
+    background: url("../images/header_icon.png") no-repeat -46px -44px;
+}
+.shortcut a{
+    display: block;
+    float: left;
+    font-weight: 700;
+}
+.shortcut li:hover a{
+    color: #f60;
+}
+.shortcut .vip:hover b{
+    background-position: -70px -68px;
+}
+.shortcut .play:hover b{
+    background-position: -24px -68px;
+}
+.shortcut .down:hover b{
+    background-position: -46px -68px;
+}
+/*lineNav end*/
+.main{
+    padding: 19px 0 30px 0;
+}
+.main .musicList{
+    float: left;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    padding: 15px;
+    width: 742px;
+    background: #fff;
+}
+.main .musicList .banner{
+    position: relative;
+    overflow: hidden;
+    width: 742px;
+    height: 170px;
+}
+.main .musicList .banner ul li{
+    display: none;
+}
+.main .musicList .banner ul .on{
+    display: block;
+}
+.main .musicList .banner ul li img{
+    width: 742px;
+    height: 170px;
+}
+.main .musicList .banner ol{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 9px;
+    padding: 5px 0 5px 5px;
+    width: 65px;
+    height: 8px;
+    background: rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+.main .musicList .banner ol:hover{
+    background: rgba(0, 0, 0, .3);
+}
+.main .musicList .banner ol li{
+    float: left;
+    margin-right: 5px;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background: #ffffff;
+}
+.main .musicList .banner ol li.on{
+    background: #f60;
+}
+.main .musicList .title{
+    padding-top: 18px;
+    height: 36px;
+}
+.main .musicList .title h3{
+    float: left;
+}
+.main .musicList .title h3 strong{
+    float: left;
+    font-size: 18px;
+    font-weight: 500;
+}
+.main .musicList .title span,.main .musicList .title a{
+    display: block;
+    float: left;
+    padding: 5px 0 0 2px;
+    font-weight: 500;
+    color: #f60;
+}
+.main .musicList .title a:hover{
+    text-decoration: underline;
+}
+.like .playlist{
+    float: left;
+    margin-right: 10px;
+    width: 140px;
+    height: 222px;
+}
+.like .playlist dt{
+    position: relative;
+    padding: 3px 3px 0;
+    width: 134px;
+    height: 161px;
+    background: #3A3935;
+}
+.like .playlist dt img{
+    float: left;
+    width: 67px;
+    height: 67px;
+}
+.like .playlist dt b{
+    position: absolute;
+    top: 43px;
+    left: 46px;
+    width: 48px;
+    height: 48px;
+    background: url("../images/play_icon.png") no-repeat;
+}
+.like .playlist dt b:hover{
+    background-position: -48px 0;
+}
+.like .playlist dt p{
+    padding: 0 5px;
+    height: 24px;
+    line-height: 26px;
+    color: #999999;
+}
+.like .playlist dd{
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+}
+.like .playlist dd a{
+    font-size: 18px;
+}
+.like .view{
+    float: left;
+    position: relative;
+    width: 590px;
+    height: 222px;
+}
+.like .view .btnL,.like .view .btnR{
+    display: none;
+    position: absolute;
+    width: 25px;
+    height: 50px;
+    background: url("../images/page_icon.png") no-repeat;
+}
+.like .view .btnL{
+    top: 58px;
+    left: -10px;
+    background-position: -25px 0;
+}
+.like .view .btnL:hover{
+    background-position: -25px -50px;
+}
+.like .view .btnR{
+    top: 58px;
+    right: -17px;
+    background-position: 0 0;
+}
+.like .view .btnR:hover{
+    background-position: 0 -50px;
+}
+.like .view:hover .btnL,.like .view:hover .btnR{
+    display: block;
+}
+/*musicList end*/
+.main .music{
+    float: right;
+    width: 302px;
+    background: #ffffff;
+    height: 300px;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img,input{
+            vertical-align: middle;
+            line-height: 0;
+            /*height: 0;*/
+            /*img实在是控制不了样式了 再用display：block*/
+        }
+    </style>
+</head>
+<body>
+****************
+editplus  也是编辑器
+
+
+png格式的图片 在ie6里面 是黑色或者灰色的
+（有兼容的js包）
+
+
+rgba ie8以上可以兼容
+
+
+opacity:0.6;（0-1）
+filter:alpha(opacity=60)（0-100）专门兼容ie的
+
+http://www.w3cplus.com/css3/ten-effects-with-css3-filter
+
+
+用透明度的元素内部的元素也会透明
+用定位 将透明的元素 放在底下
+内容和透明元素是兄弟元素 兄弟元素定义到上面
+<!--<div style="position: relative">
+
+    <div style="width: 1000px;height: 200px;background: #000;opacity: 0.1;position: absolute;top: 0;left: 0;">
+    </div>
+    <div style="width: 1000px;height: 200px;color:red;font-size: 100px; font-weight: 900; text-align: center;position: absolute;top: 0;left: 0">文字文字文字文字稳增长</div>
+</div>-->
+
+
+只要是透明度：都会占据页面的空间面积
+display:none; 在页面上消失
+
+固定的html结构和css样式 基本上都是一次性加载完成
+
+<!--end-->html
+注释尽量不要中文  编码
+修改之前 一定要备份
+维护会很吃力
+<!----------不能要的---------------------------end-------------------------------------------------->
+/**/css
+//js
+
+<style type="text/css">
+img{
+    vertical-align: bottom;
+    /* 专门针对行内元素的 display inline-block  行内块级元素 */
+
+}
+p{
+    width: 200px;_width:198px;
+    /*color:blue !important;     增加css属性的权重*/
+    color:green;
+    /*紧跟着你要改变的属性写*/
+}
+</style>
+<div>文字<img src="1.jpg" alt=""></div>
+
+
+
+<!--[if IE]>IE浏览器显示的内容<![endif]-->
+一般放置在head中
+png ie6
+<script type="text/javascript">
+
+</script>
+
+
+
+****************************************************
+ie7 在市场上使用时间特别短   ie8 在ie10 出现之前是最稳定的
+360 搜狗 浏览器一旦出现兼容问题 先去看是否是兼容模式 如果是 直接去找ie7的解决方案
+****************************************************
+
+ie10 兼容  ？？？
+**********************定位
+解决input 的兼容问题
+
+尽量将input脱离文档流
+如果用浮动不可以 就用定位
+
+form 包裹着表单 一般不要给form进行样式的添加
+<form action="1.jsp" method="get" id="">
+    <div>
+        <!--把大背景放在这个div里面 background 这个div 作为定位的参照物-->
+        <input type="text">
+        <input type="button">
+        <!--这两个input 宽高 padding  要给
+
+        border不要给
+
+        -->
+    </div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

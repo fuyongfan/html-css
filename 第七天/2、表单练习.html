@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>表单练习</title>
+    <style type="text/css">
+        body,ul,li,form,input,textarea,select,option{
+            margin: 0;
+            padding: 0;
+        }
+        input{
+            /*
+            border: none; 一般控制 type是text password button
+            */
+            border: 1px solid #cccccc;
+            /*width: 200px;*/
+            /*height: 50px;*/
+            /*宽度和高度都起作用，然后某些属性会只读取宽高中的最小值*/
+            vertical-align: middle;
+            outline: none;
+            cursor: pointer;
+            /*cursor: pointer; 让鼠标的形态变为小手*/
+            /*outline: none; 点击后边框样式的清除*/
+            /*
+            如果想改变表单点击后的颜色 可以在表单外加一层元素 对这个新添加的元素进行样式的控制（js）
+            */
+        }
+    </style>
+</head>
+<body>
+<form action="" method="get">
+    <ul>
+        <li>
+            <label>名字：</label><input type="text" name="" value=""/>
+        </li>
+        <li>
+            <label>密码：</label><input type="password" name="" value=""/>
+        </li>
+        <li>
+            <label>爱好：</label>
+            <label>歌剧：</label><input type="checkbox" name="" value=""/>
+            <label>电影：</label><input type="checkbox" name="" value=""/>
+            <label>旅游：</label><input type="checkbox" name="" value=""/>
+            <label>打豆豆：</label><input type="checkbox" name="" value=""/>
+        </li>
+        <li>
+            <label>性别：</label>
+            <label>男：</label><input type="radio" name="radio" value="" checked/>
+            <label>女：</label><input type="radio" name="radio" value=""/>
+        </li>
+        <li>
+            <label>自我介绍：</label>
+            <textarea>
+
+            </textarea>
+        </li>
+        <li>
+            <label>地区：</label>
+            <label>省：</label>
+            <select>
+                <option value="北京">北京</option>
+                <option value="河北省">河北省</option>
+                <option value="河南省">河南省</option>
+                <option value="辽宁省">辽宁省</option>
+            </select>
+            <label>市：</label>
+            <select>
+                <option value="北京">北京市</option>
+                <option value="石家庄">石家庄</option>
+                <option value="郑州市">郑州市</option>
+                <option value="沈阳市">沈阳市</option>
+            </select>
+            <label>县：</label>
+            <select>
+                <option value="北京">北京</option>
+                <option value="河北省">河北省</option>
+                <option value="河南省">河南省</option>
+                <option value="辽宁省">辽宁省</option>
+            </select>
+        </li>
+        <li>
+            <input type="button" name="" value="提交"/>
+        </li>
+    </ul>
+</form>
+
+
+form 里面 有
+名字
+密码
+爱好 （歌剧 电影 旅游 打豆豆 睡觉 吃饭 读书）多选
+性别 单选
+自我介绍
+地区：省 市 县
+提交按钮
+每一个都在一行
+</body>
+</html>

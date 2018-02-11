@@ -1,0 +1,34 @@
+/*h1{
+    /!*标签选择器*!/
+    width: 400px;
+    height: 50px;
+    line-height: 50px;/!*行高*!/
+    /!*有数值的css属性 一定要写单位*!/
+    text-decoration: underline;/!*文字下划线*!/
+    text-align: center;/!*文字居中*!/
+    color: #f1f1f1;/!*文字的颜色*!/
+    background-color: #39b3be;/!*背景颜色*!/
+}*/
+/*
+h1{这个里面的内容是针对h1的}
+{
+    属性名:属性值;
+}*/
+
+h1{
+    width: 500px;height:50px;
+    /*
+    为什么要写分号：代码压缩时，分号可以区分属性，使属性正确的显示
+    css代码中的符号都是英文状态下的半角
+    */
+}
+
+
+
+
+
+
+
+
+
+

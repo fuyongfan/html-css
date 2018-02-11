@@ -1,0 +1,155 @@
+body,p,div,input,span,img{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.box{
+    width: 668px;
+    /*height: 556px;*/
+    margin: 0 auto;
+    font-family: "Microsoft yahei", Arial, SimSun;
+    font-size: 10px;
+    color: #34383b;
+    background-color:#f8fdff;
+    padding-top: 1px
+}
+.box .header{
+    margin: 16px 0px 0 32px;
+    padding: 0 0 10px 5px;
+    border:1px solid #dadfe2;
+    border-color:transparent transparent #dadfe2 #6aaed5;
+    border-left-width: 3px;
+    font-size: 20px;
+    color: #5b6063;
+}
+.box .bodyM{
+    width: 605px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 60px;
+   }
+.box .bodyM span{
+    font-size: 15px;
+    color:#34393c;
+
+}
+.box .bodyM .input2{
+    width: 300px;
+    height: 35px;
+    border:1px solid #c8cdd0;
+    background-color:#f4f9fd;
+    border-radius: 5%;
+}
+.box .bodyM .lef{
+    margin-left:30px;
+
+}
+.box .bodyM .input1{
+    background-color: #ffffff;
+    border:1px solid #769ad4;
+
+}
+.box .bodyM .text{
+    float: right;
+}
+.box .bodyM .text a{
+    color:#6b919a;
+}
+.box .bodyM .clear{
+    clear: both;
+}
+.box .bodyM .password{
+    margin: 15px 60px 15px 0;
+}
+.box .bodyM .sex{
+
+    margin: 15px 0 23px 0;
+    float: left;
+  }
+.box .bodyM .sex .radio{
+    width: 15px;
+    height: 15px;
+
+}
+.box .bodyM .year{
+    margin-bottom: 20px;
+}
+.box .bodyM select{
+    background-color:#f4f9fd;
+    color:#6b919a;
+    padding:3px 5px;
+    border-radius: 5%;
+}
+.box .bodyM .year .year2{
+    width:62px;
+
+}
+.box .bodyM .year .year1{
+   width: 105px;
+}
+.box .bodyM .place{
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.box .bodyM .place .year3{
+    width: 99px;
+}
+.box .bodyM .code{
+    margin-left:15px;
+    margin-bottom: 20px;
+    background-image:url("../imges/code_03.png");
+    background-repeat: no-repeat;
+    background-position: 225px;
+    position: relative;
+}
+.box .bodyM .code input{
+    width:165px;
+    height: 50px;
+}
+.box .bodyM .code a{
+    position: absolute;
+    right: 145px;
+    bottom: -5px;
+}
+.box .bodyM .reap input{
+    width: 15px;
+    height: 15px;
+    margin-left: 65px;
+}
+.box .bodyM .reap p{
+    display: inline-block;
+    float: right;
+
+    color:#34393c;
+}
+.box .bodyM .reap .p1{
+    margin-right: 430px;
+
+}
+.box .bodyM .reap .p2{
+    margin-right: 390px;
+    
+}
+.box .bodyM .reap span{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 5px solid #6d8a9c;
+    border-color: #6d8a9c transparent transparent  transparent;
+    position: absolute;
+    left: 635px;
+    top: 460px;
+}
+.box .bodyM .submit{
+    width: 180px;
+    height: 50px;
+    font-size: 23px;
+    font-weight: 900;
+    color:#f9ffe4 ;
+    background-color: #86cd65;
+    border-radius: 7%;
+    margin: 20px 0 43px 65px;
+}

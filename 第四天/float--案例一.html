@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>案例一</title>
+    <style type="text/css">
+        body,div,img{
+            /*并集选择器*/
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            border: none;
+        }
+        div{
+            width: 1300px;
+            height: 490px;
+            background-color: #cccccc;
+        }
+        div img{
+            /*权重是 1+1=2*/
+            /*img{ --> img是要操作的元素*/
+            float: left;
+        }
+        .img3{
+            /*权重是10*/
+            /*外边距来制作*/
+            margin-top: 244px;
+            margin-left: -277px;
+            /*margin padding 的值可以是负数*/
+
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img src="1.jpg" alt=""/>
+    <img src="2.jpg" alt=""/>
+    <img class="img3" src="3.jpg" alt=""/>
+    <img src="4.jpg" alt=""/>
+    <img src="5.jpg" alt=""/>
+    <img src="6.jpg" alt=""/>
+    <img src="7.jpg" alt=""/>
+    <img src="8.jpg" alt=""/>
+</div>
+
+Elements 所有的元素 在左侧
+
+style    所有的样式 在右侧
+element.style 行内样式
+
+
+</body>
+</html>

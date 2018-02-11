@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>盒子模型2</title>
+    <style type="text/css">
+        body,div,img{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            border: none;
+        }
+        /*清除默认样式*/
+        .parent{
+            /*overflow: hidden;*/
+            /*溢出隐藏*/
+            padding-left: 100px;
+            padding-top: 110px;
+            width: 900px;
+            height: 490px;
+            background-color: #1b66c7;
+            /*
+            宽度和高度定好的情况下，一旦给了内边距或者边框，一定要在宽度和高度的基础上减去内边距和高度的值
+            */
+        }
+        .box{
+            width: 750px;
+            height: 290px;
+            background-color: #cccccc;
+            /*margin-left: 100px;*/
+            /*margin-top: 110px;*/
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <div class="box">
+        <img src="pic12.jpg" alt=""/>
+        <!-- content -->
+    </div>
+</body>
+</html>

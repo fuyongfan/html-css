@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body,div{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            float: left;
+            border: 30px solid #00c0a5;
+            width: 300px;
+            height: 100px;
+            background: #afbecf;
+            /*360*/
+        }
+        .box2{
+            float: left;
+            /*box2盒子的宽度是多少 width200+0+50
+            */
+            /*100+100+200+50 + 100=550*/
+            border: 100px solid #2fbc71;
+            margin: 100px 30px 20px 100px;
+            padding: 20px 50px 10px 0;
+            width: 200px;
+            height: 300px;
+            background: #000000;
+            /*
+            box1的最上面离box2的最下面的距离=border上下 60+height100+marginTop100+paddingTop20px+paddingBottom10px=290
+            */
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background: #005ea7;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+</div>
+<div class="box2"></div>
+<div class="box3">
+
+</div>
+<!--
+盒子模型是有四个属性组成 内容 内边距 边框 外边距
+盒子的宽度和高度是由内容 内边距和边框决定的 和外边距无关
+盒子的宽度和高度如果在样式中已经设置好之后，你再额外的添加padding和border值的时候，一定要减去这两个值***********************
+-->
+</body>
+</html>

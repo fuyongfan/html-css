@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+div ul li p span a{操作a标签}
+有一个特殊的情况 并集选择器的时候 操作全部元素 用“,”隔开的选择器
+要有元素 才能够选择
+选择器{紧挨着“{”的元素才是要操作的元素}
+html标签  class id
+基本选择器 {
+    继承样式    0.1
+    标签选择器  1
+    类选择器    10
+    id选择器    100
+}
+并集选择器 h1,h2{} ,叫做链接
+交集选择器 h1.className/h1#idName
+后代选择器 ul li .className  空格叫做链接
+伪类选择器 li:hover :叫做链接
+子级选择器 ul>li    >叫做链接
+通配符选择器*
+
+body中有的元素 才能选择操作
+<style>
+    #idName{
+        background: pink;
+    }
+    .className{
+        width: 200px;
+        height: 200px;
+    }
+    p{
+        width: 100px;
+        height: 100px;
+        background: #00c0a5;
+    }
+</style>
+
+ul .list span a{13}
+ul.list{11}
+p.className{交集选择器}
+p#idName{交集选择器}
+交集选择器必须满足 标签和类名或者id名在一个标签内
+标签+className/标签+idName
+<p class="className" id="idName"></p>
+</body>
+</html>

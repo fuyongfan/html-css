@@ -1,0 +1,40 @@
+body,ul,li{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+    /*清除列表的样式*/
+}
+ul{
+    background: #ffffff;
+}
+ul li{
+    float: left;
+    border-right: 1px solid #f4f4f4;
+    padding-top: 47px;
+    width: 74px;
+    height: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Microsoft Yahei", simSun;
+    color: #666666;
+    background: url("bg.png") no-repeat;
+    /*本css文件只加载这个图片一次*/
+}
+.list1{
+    background-position: 24px 13px;
+}
+.list2{
+    background-position: -49px 13px;
+}
+.list3{
+    background-position: -126px 13px;
+}
+/* css雪碧图的意义是 将小图标放置在一个图片上，http加载请求只是一次，这样可以大大的加快网页的访问速度*/
+
+
+
+
+
+
